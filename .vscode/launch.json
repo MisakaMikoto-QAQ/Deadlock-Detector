@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "Debug (input1_deadlock)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/deadlock_detector",
+      "args": ["input1_deadlock.txt"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "build deadlock_detector"
+    }
+  ]
+}

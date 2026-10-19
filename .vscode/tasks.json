@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build deadlock_detector",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17", "-Wall", "-Wextra", "-O2", "-g",
+        "-o", "deadlock_detector",
+        "deadlock_detector.cpp"
+      ],
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "run input1 (deadlock)",
+      "type": "shell",
+      "command": "./deadlock_detector input1_deadlock.txt",
+      "dependsOn": "build deadlock_detector",
+      "problemMatcher": []
+    },
+    {
+      "label": "run input2 (safe)",
+      "type": "shell",
+      "command": "./deadlock_detector input2_safe.txt",
+      "dependsOn": "build deadlock_detector",
+      "problemMatcher": []
+    }
+  ]
+}

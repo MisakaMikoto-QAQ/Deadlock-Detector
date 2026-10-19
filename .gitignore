@@ -1,0 +1,143 @@
+# ============================================================
+# C / C++ 编译产物
+# ============================================================
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.lib
+*.exe
+*.out
+*.app
+*.i
+*.ii
+*.s
+*.bc
+*.gcno
+*.gcda
+*.gcov
+
+# 本项目直接生成的可执行文件
+deadlock_detector
+
+# ============================================================
+# CMake / Makefile 中间产物（若日后使用）
+# ============================================================
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile.in
+*.cmake
+!/CMakeLists.txt
+configure
+config.status
+config.log
+autom4te.cache/
+build/
+dist/
+out/
+
+# Makefile 本身是生成物时忽略（本项目是手写的，保留它）
+# 若你的 Makefile 是 autoreconf 生成的，请取消下一行注释：
+# Makefile
+
+# ============================================================
+# 调试器 / 性能分析产物
+# ============================================================
+*.gdb_history
+gmon.out
+perf.data
+perf.data.old
+valgrind-out.txt
+*.dSYM/
+.dSYM/
+
+# ============================================================
+# 编辑器 / IDE 配置
+# ============================================================
+# VSCode —— 注意：.vscode/ 中的 tasks.json 与 launch.json 是团队共享配置，不忽略
+# 只忽略个人工作区文件
+.vscode/*.code-workspace
+.vscode/settings.json
+.vscode/*.local.json
+
+# Vim
+*.swp
+*.swo
+*.swn
+.*.sw?
+Session.vim
+.viminfo
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# CLion / JetBrains
+.idea/
+*.iml
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.*
+*.sln
+
+# ============================================================
+# 操作系统生成物
+# ============================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================================
+# 测试 / 覆盖率产物
+# ============================================================
+coverage/
+*.profraw
+*.profdata
+lcov.info
+test_output/
+*.log
+
+# ============================================================
+# 临时文件
+# ============================================================
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*~
+core
+core.*
+
+# ============================================================
+# 其他工具
+# ============================================================
+compile_commands.json
+.cache/
+.clangd/
+.clang-format.cache
+.ccache/
